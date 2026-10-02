@@ -1,0 +1,297 @@
+/* ======================================================
+   RouteOptix - Global Styles
+====================================================== */
+
+:root {
+
+  --bg: #050816;
+  --panel: rgba(11, 18, 32, 0.85);
+
+  --border: #233554;
+
+  --cyan: #00E5FF;
+  --green: #22C55E;
+  --orange: #F59E0B;
+  --red: #EF4444;
+
+  --text: #E2E8F0;
+  --muted: #94A3B8;
+
+  --shadow: 0 10px 30px rgba(0, 229, 255, 0.12);
+
+  font-family:
+          Inter,
+          "Segoe UI",
+          Roboto,
+          Helvetica,
+          Arial,
+          sans-serif;
+
+  color: var(--text);
+  background: var(--bg);
+
+  text-rendering: optimizeLegibility;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+/* ======================================================
+   Reset
+====================================================== */
+
+* {
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+}
+
+html,
+body,
+#root {
+
+  width: 100%;
+
+  min-height: 100vh;
+
+}
+
+body {
+
+  background: var(--bg);
+
+  color: var(--text);
+
+  overflow-x: hidden;
+
+}
+
+/* ======================================================
+   Root Container
+====================================================== */
+
+#root {
+
+  width: 100%;
+
+  min-height: 100vh;
+
+}
+
+/* ======================================================
+   Typography
+====================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+
+  font-weight: 600;
+
+  color: white;
+
+}
+
+p {
+
+  color: var(--muted);
+
+  line-height: 1.6;
+
+}
+
+a {
+
+  text-decoration: none;
+
+  color: inherit;
+
+}
+
+/* ======================================================
+   Buttons
+====================================================== */
+
+button {
+
+  cursor: pointer;
+
+  border: none;
+
+  outline: none;
+
+  border-radius: 10px;
+
+  transition: all .25s ease;
+
+  font-family: inherit;
+
+}
+
+button:hover {
+
+  transform: translateY(-2px);
+
+}
+
+button:active {
+
+  transform: scale(.98);
+
+}
+
+/* ======================================================
+   Inputs
+====================================================== */
+
+input,
+select {
+
+  background: #111827;
+
+  color: white;
+
+  border: 1px solid var(--border);
+
+  border-radius: 8px;
+
+  padding: 10px;
+
+}
+
+/* ======================================================
+   Scrollbar
+====================================================== */
+
+::-webkit-scrollbar {
+
+  width: 10px;
+
+}
+
+::-webkit-scrollbar-track {
+
+  background: #09111F;
+
+}
+
+::-webkit-scrollbar-thumb {
+
+  background: var(--cyan);
+
+  border-radius: 20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+
+  background: #38BDF8;
+
+}
+
+/* ======================================================
+   Fade Animation
+====================================================== */
+
+@keyframes fade {
+
+  from {
+
+    opacity: 0;
+
+    transform: translateY(15px);
+
+  }
+
+  to {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+  }
+
+}
+
+.fade {
+
+  animation: fade .45s ease;
+
+}
+
+/* ======================================================
+   Glass Effect
+====================================================== */
+
+.glass {
+
+  background: var(--panel);
+
+  backdrop-filter: blur(16px);
+
+  border: 1px solid var(--border);
+
+  box-shadow: var(--shadow);
+
+  border-radius: 18px;
+
+}
+
+/* ======================================================
+   Card Hover
+====================================================== */
+
+.card-hover {
+
+  transition: .25s;
+
+}
+
+.card-hover:hover {
+
+  transform: translateY(-4px);
+
+  box-shadow: 0 12px 35px rgba(0,229,255,.18);
+
+}
+
+/* ======================================================
+   Responsive
+====================================================== */
+
+@media (max-width: 1200px) {
+
+  html {
+
+    font-size: 15px;
+
+  }
+
+}
+
+@media (max-width: 900px) {
+
+  html {
+
+    font-size: 14px;
+
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  html {
+
+    font-size: 13px;
+
+  }
+
+}

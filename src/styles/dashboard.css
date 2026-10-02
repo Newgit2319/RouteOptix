@@ -1,0 +1,175 @@
+.dashboard{
+
+    min-height:100vh;
+
+    background:#050816;
+
+    color:white;
+
+    padding:20px;
+
+}
+
+.dashboard-header{
+
+    margin-bottom:20px;
+
+}
+
+.dashboard-kpis{
+
+    margin-bottom:24px;
+
+}
+
+.dashboard-analytics{
+
+    margin-bottom:24px;
+
+}
+.workspace{
+    display:grid;
+    grid-template-columns:260px minmax(0,1fr) 330px;
+
+    gap:20px;
+
+    height:calc(100vh - 420px);
+
+    min-height:850px;
+
+    overflow:hidden;
+}
+
+.left-panel{
+
+    overflow-y:auto;
+
+    overflow-x:hidden;
+
+    min-height:0;
+
+}
+
+.center-panel{
+
+    background:#07101E;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    display:flex;
+
+    flex-direction:column;
+
+    min-width:0;
+
+    min-height:0;
+
+}
+
+.right-panel{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+    overflow-y:auto;
+
+    overflow-x:hidden;
+
+    min-height:0;
+
+}
+
+@media(max-width:1400px){
+
+    .workspace{
+
+        grid-template-columns:230px minmax(0,1fr) 320px;
+
+    }
+
+}
+
+@media(max-width:1100px){
+
+    .workspace{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .left-panel,
+
+    .right-panel{
+
+        position:static;
+
+    }
+
+}
+.map-wrapper{
+
+    display:flex;
+
+    flex-direction:column;
+
+    height:100%;
+
+}
+
+.map-area{
+
+    flex:1;
+
+    min-height:0;
+
+    border-radius:16px;
+
+    overflow:hidden;
+
+}
+.map-toolbar{
+
+    position:absolute;
+
+    top:20px;
+
+    right:20px;
+
+    z-index:100;
+
+    display:flex;
+
+    gap:10px;
+
+}
+
+.map-toolbar button{
+
+    background:#0EA5E9;
+
+    color:white;
+
+    border:none;
+
+    border-radius:8px;
+
+    padding:10px 15px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+}
+
+.map-toolbar button:hover{
+
+    background:#2563EB;
+
+}
